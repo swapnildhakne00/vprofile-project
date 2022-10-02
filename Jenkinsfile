@@ -13,7 +13,7 @@ pipeline {
 	NEXUS_USER = "admin"
 	NEXUS_PASS = "Yungk@567"
         NEXUS_PROTOCOL = "http"
-        NEXUS_URL = "192.168.1.10:8081"
+        NEXUS_URL = "192.168.1.24:8081"
         NEXUS_REPOSITORY = "vprofile-release"
 	NEXUS_GRP_REPO    = "vpro-maven-group"
         NEXUS_CREDENTIAL_ID = "nexuslogin"
@@ -73,7 +73,6 @@ pipeline {
                             nexusVersion: NEXUS_VERSION,
                             protocol: NEXUS_PROTOCOL,
                             nexusUrl: NEXUS_URL,
-                            groupId: NEXUS_REPOGRP_ID,
                             version: ARTVERSION,
                             repository: NEXUS_REPOSITORY,
                             credentialsId: NEXUS_CREDENTIAL_ID,
